@@ -1,0 +1,202 @@
+[data-bs-theme="dark"] {
+    --bs-body-font-family: 'DM Sans', sans-serif;
+    --bs-body-bg: #0f1714;
+    --bs-body-bg-rgb: 15, 23, 20;
+    --bs-body-color: #e8efe9;
+    --bs-body-color-rgb: 232, 239, 233;
+    --bs-secondary-color: rgba(232, 239, 233, 0.7);
+    --bs-tertiary-bg: #16221d;
+    --bs-tertiary-bg-rgb: 22, 34, 29;
+    --bs-border-color: #2a3b34;
+    --bs-primary: #34d399;
+    --bs-primary-rgb: 52, 211, 153;
+    --bs-primary-bg-subtle: #12372b;
+    --bs-link-color: #34d399;
+    --bs-link-color-rgb: 52, 211, 153;
+    --bs-link-hover-color: #6ee7b7;
+    --bs-link-hover-color-rgb: 110, 231, 183;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.btn-primary {
+    --bs-btn-color: #06281c;
+    --bs-btn-bg: #34d399;
+    --bs-btn-border-color: #34d399;
+    --bs-btn-hover-color: #06281c;
+    --bs-btn-hover-bg: #6ee7b7;
+    --bs-btn-hover-border-color: #6ee7b7;
+    --bs-btn-active-color: #06281c;
+    --bs-btn-active-bg: #10b981;
+    --bs-btn-active-border-color: #10b981;
+    --bs-btn-focus-shadow-rgb: 52, 211, 153;
+}
+
+.progress-bar {
+    background-color: var(--bs-primary);
+}
+
+.font-display {
+    font-family: 'Fraunces', serif;
+}
+
+.nav-blur {
+    backdrop-filter: blur(10px);
+}
+
+.brand-mark {
+    width: 36px;
+    height: 36px;
+    color: #06281c;
+}
+
+.navbar {
+    --bs-navbar-color: rgba(232, 239, 233, 0.7);
+    --bs-navbar-hover-color: #34d399;
+    --bs-navbar-active-color: #34d399;
+}
+
+.navbar .nav-link {
+    border-radius: 50rem;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-link.active {
+    background-color: rgba(var(--bs-primary-rgb), 0.12);
+}
+
+.hero {
+    min-height: calc(100vh - 72px);
+    background: radial-gradient(circle at 85% 15%, rgba(52, 211, 153, 0.15), transparent 45%);
+}
+
+.highlight {
+    color: #ffd166;
+    background: linear-gradient(transparent 85%, rgba(255, 209, 102, 0.45) 85%);
+    padding: 0 0.1em;
+}
+
+.social-link {
+    display: inline-block;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-link:hover {
+    color: var(--bs-primary) !important;
+    transform: translateY(-3px);
+}
+
+.profile-card {
+    --bs-card-bg: var(--bs-tertiary-bg);
+    box-shadow: 0 20px 60px rgba(52, 211, 153, 0.12);
+    transform: rotate(2deg);
+    transition: transform 0.4s;
+}
+
+.profile-card:hover {
+    transform: rotate(0deg);
+}
+
+.avatar-box {
+    width: 64px;
+    height: 64px;
+}
+
+.status-dot {
+    font-size: 8px;
+}
+
+.icon-box {
+    width: 48px;
+    height: 48px;
+}
+
+.stat-card {
+    --bs-card-bg: var(--bs-body-bg);
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.project-card,
+.quick-card {
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.stat-card:hover,
+.project-card:hover,
+.quick-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--bs-primary) !important;
+    box-shadow: 0 15px 35px rgba(52, 211, 153, 0.12);
+}
+
+.skill-card {
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--bs-primary) !important;
+}
+
+.skill-card .progress {
+    --bs-progress-bg: var(--bs-body-bg);
+    --bs-progress-height: 8px;
+}
+
+.skill-card .badge {
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.skill-card .badge:hover {
+    border-color: var(--bs-primary) !important;
+    transform: translateY(-2px);
+}
+
+.project-thumb {
+    height: 160px;
+    font-size: 64px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.thumb-1 { background: linear-gradient(135deg, #0f766e, #0f1714); }
+.thumb-2 { background: linear-gradient(135deg, #1d4ed8, #0f1714); }
+.thumb-3 { background: linear-gradient(135deg, #a16207, #0f1714); }
+
+.timeline-dot {
+    width: 16px;
+    height: 16px;
+}
+
+.social-btn {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.form-control {
+    background-color: var(--bs-tertiary-bg);
+    border-color: var(--bs-border-color);
+}
+
+.form-control:focus {
+    background-color: var(--bs-tertiary-bg);
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.2);
+}
